@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/lndobryden/ansible-role-comskip.svg?branch=master)](https://travis-ci.org/lndobryden/ansible-role-comskip)
 Comskip
 =========
 
