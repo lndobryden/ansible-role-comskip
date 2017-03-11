@@ -15,11 +15,6 @@ Role Variables
 
 Currently none
 
-Dependencies
-------------
-
-Git must be installed before using this role
-
 Example Playbook
 ----------------
 
