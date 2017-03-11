@@ -32,7 +32,7 @@
 
 - name: Clone Comskip Repo
   git:
-    repo: git://github.com/lndobryden/Comskip
+    repo: git://github.com/erikkaashoek/Comskip
     dest: /opt/comskip
     version: 0f44f262d821629889cbfeafae60e8219fa14985
 
