@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   remote_user: root
-  roles:
-    - comskip
+  tasks:
+    - include: ../tasks/main.yml
