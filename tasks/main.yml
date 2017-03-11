@@ -1,2 +1,52 @@
 ---
-# tasks file for comskip
+- name: Download build-essential
+  apt:
+    name: build-essential
+    state: installed
+
+- name: Download autoconf
+  apt:
+    name: autoconf
+    state: installed
+
+- name: Download libtool
+  apt:
+    name: libtool
+    state: installed
+
+
+- name: Download libargtable2-dev
+  apt:
+    name: libargtable2-dev
+    state: installed
+
+- name: Download libavformat-dev
+  apt:
+    name: libavformat-dev
+    state: installed
+
+- name: Download libsdl1.2-dev
+  apt:
+    name: libsdl1.2-dev
+    state: installed
+
+- name: Clone Comskip Repo
+  git:
+    repo: git://github.com/lndobryden/Comskip
+    dest: /opt/comskip
+    version: 0f44f262d821629889cbfeafae60e8219fa14985
+
+- name: Autogen Comskip
+  shell: ./autogen.sh
+  args:
+    chdir: /opt/comskip
+
+- name: Configure Comskip
+  shell: ./configure
+  args:
+    chdir: /opt/comskip
+
+- name: Make Install Comskip
+  make:
+    target: install
+    chdir: /opt/comskip
