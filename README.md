@@ -22,7 +22,7 @@ Example Playbook
 ```
     - hosts: servers
       roles:
-         - { role: lndobryden:comskip }
+         - lndobryden.comskip
 ```
 License
 -------
