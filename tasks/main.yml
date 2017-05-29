@@ -4,6 +4,11 @@
     name: build-essential
     state: installed
 
+- name: Download automake
+  apt:
+    name: automake
+    state: installed
+
 - name: Download autoconf
   apt:
     name: autoconf
